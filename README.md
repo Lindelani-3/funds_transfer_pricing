@@ -51,14 +51,12 @@ ftp_full_showcase.ipynb         # simplified, sanitized demonstration
 $r(t)=\beta_0 + \beta_1\frac{1-e^{-t/\tau}}{t/\tau} + \beta_2\left(\frac{1-e^{-t/\tau}}{t/\tau}-e^{-t/\tau}\right)$
 	•	Fit by non-linear least squares; constrain \tau>0.
 
-<img width="467" height="75" alt="ftp base term add" src="https://github.com/user-attachments/assets/0533602d-007c-4f6e-88d6-dbdc0f0719ad" />
-
 
 5.	3-month discount-factor shift
 	•	Compute deposit − T-bill spread (3m) using PCHIP-interpolated points.
 	•	Horizontally shift base term to better reflect short-term deposit observables.
 
-<img width="1293" height="273" alt="3m_discount_factor" src="https://github.com/user-attachments/assets/2310eb42-f566-4dc0-bb95-3bc69b82c8bc" />
+<img width="467" height="75" alt="ftp base term add" src="https://github.com/user-attachments/assets/0533602d-007c-4f6e-88d6-dbdc0f0719ad" />
 
 
 7.	Liquidity premium computed as the difference between product-specific required yield and market-price-of-money point.
