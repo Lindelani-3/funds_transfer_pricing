@@ -6,7 +6,7 @@
 
 ---
 
-Project Summary
+### Project Summary
 
 I led the design and development of Nedbank Eswatini’s first Funds Transfer Pricing (FTP) framework to quantify the internal cost of funds and improve product-level profitability reporting. The model was built using mostly Python and Excel, integrating both internal and external data.
 
@@ -16,7 +16,7 @@ Implementing an automated, transparent, and reproducible model that aligns with 
 
 ---
 
-Repository structure
+### Repository structure
 
 README.md
 ftp_full_showcase.ipynb         # simplified, sanitized demonstration
@@ -34,7 +34,7 @@ ftp_full_showcase.ipynb         # simplified, sanitized demonstration
 
 ---
 
-Methodology (concise, technical)
+### Methodology (concise, technical)
 
 1.	Preprocessing
 	•	Clean raw yields and account snapshots.
@@ -55,10 +55,7 @@ $r(t)=\beta_0 + \beta_1\frac{1-e^{-t/\tau}}{t/\tau} + \beta_2\left(\frac{1-e^{-t
 	•	Compute deposit − T-bill spread (3m) using PCHIP-interpolated points.
 	•	Horizontally shift base term to better reflect short-term deposit observables.
 
-5.	Behavioral & liquidity adjustments
-	•	Define cohort-specific behavioral weights w_i (exponential decay or empirical repricing profiles).
-	•	Define a small-parameter spread function $s(t)$ (e.g., $s_0 e^{-\lambda t}$) and find $(s_0,\lambda)$ via constrained optimization so that cohort-weighted averages match observed funding metrics.
-	•	Liquidity premium computed as the difference between product-specific required yield and market-price-of-money point.
+5.	Liquidity premium computed as the difference between product-specific required yield and market-price-of-money point.
 
 6.	FTP allocation
 	•	Map accounts → cohorts → tenor buckets.
