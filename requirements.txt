@@ -1,0 +1,19 @@
+# Core data handling -- used throughout curve_model/, pipeline/, demo_data/
+pandas>=1.5
+numpy>=1.23
+
+# curve_model/ -- Nelson-Siegel fitting (scipy) and isotonic smoothing (scikit-learn)
+scipy>=1.9
+scikit-learn>=1.1
+
+# Date arithmetic (curve_model/ tenor calculations) and Excel I/O
+# (curve_model/ reporting exports, demo_data/ reference workbooks and
+# raw extracts, pipeline/ sample snippet inputs)
+python-dateutil>=2.8
+openpyxl>=3.0
+
+# curve_model/ diagnostic plots
+matplotlib>=3.5
+
+# Running the .ipynb notebooks (curve_model/, pipeline/, demo_data/)
+jupyter>=1.0
