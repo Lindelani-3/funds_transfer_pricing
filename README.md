@@ -1,4 +1,4 @@
-# FTP Framework — Curve Construction, Behavioural Pricing & Consolidation
+# FTP Framework — Curve Construction, Behavioural Pricing & Charge Consolidation
 
 An end-to-end Funds Transfer Pricing (FTP) framework: a curve
 construction engine, a behavioural WAL model, and an account-level
